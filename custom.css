@@ -141,7 +141,7 @@ body .notebook-app {
 }
 
 .container {
-	width: 88%;
+	width: 95%;
 }
 
 #site {
@@ -149,9 +149,10 @@ body .notebook-app {
 }
 
 #notebook-container {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    padding: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 0px;
+  margin-left: 20px !important;
 }
 
 .nav > li > a {
@@ -170,8 +171,8 @@ code,
 kbd,
 pre,
 samp {
-    font-family: 'Iosevka', 'sf-mono', 'Menlo', 'Courier New', monospace !important;
-    font-size: 0.85rem !important;
+    font-family: 'Input Mono', 'Operator Mono Book', 'sf-mono', 'Menlo', 'Courier New', monospace !important;
+    font-size: 0.75rem !important;
 }
 
 h1 {
@@ -342,11 +343,19 @@ div.output_subarea {
 } */
 
 div.output_html {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: normal;
-    font-family: 'sf-mono', 'Menlo', 'Courier New', monospace;
+    font-family: 'Helvetica', 'Menlo', 'Courier New', monospace;
 }
 
+/*
+ * I like to use smaller fonts for the displayed table
+ */
+table.dataframe {
+  font-size: 0.65rem;
+}
+
+/*
 table.dataframe {
     border-collapse: collapse;
     border: none;
@@ -362,23 +371,22 @@ table.dataframe thead tr {
     padding: 5px 10px;
     border-bottom:  1px solid #828282;
     vertical-align: middle;
-	text-align: center;
+    text-align: center;
 }
 
 table.dataframe thead tr th, table.dataframe thead tr:only-child th {
-	vertical-align: middle;
-	text-align: center;
+    vertical-align: middle;
+    text-align: center;
 }
 
 table.dataframe tbody {
 	padding-top:  5px;
 }
 
-
 table.dataframe tbody tr {
 
-
 }
+
 table.dataframe tbody tr th {
 	background-color: #ffffff;
     text-align: left;
@@ -390,7 +398,8 @@ table.dataframe tbody tr td {
     color: #828282;
     padding-left: 1.0rem;
     padding-right: 1.0rem;
-}
+} */
+
 
 
 /* table, table.dataframe tr {
